@@ -1,38 +1,230 @@
-.App {
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #e8eaed;
+}
+
+.button {
+  text-decoration: none;
+  min-width: 100px;
   text-align: center;
+  color: #ffffff;
+  background-color: #4469ae;
+  padding: 7px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  margin-left: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.delete-button {
+    background-color: crimson;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.CardItem__card_wrapper {
+    background-color: #ffffff;
+
+    margin: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.CardItem__content {
+    margin: 10px;
+}
+
+.CardItemHeader__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.CardItemHeader__avatar {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 5px 10px;
+}
+
+.CardItemHeader__username {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3b5da5;
+    margin: 0;
+    padding: 0;
+}
+
+.CardItemHeader__userRole-container {
+    display: flex;
+    align-items: center;
+}
+
+.CardItemHeader__userRole {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.CardItemHeader__timestamp {
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+}
+
+.CardItemLikes-container {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #e8eaed;
+    border-bottom: 1px solid #e8eaed;
+    margin: 10px;
+}
+
+.CardItemLikes-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 50%;
+    margin: 0;
+    padding: 10px;
+}
+
+.CardItemLikes-button > p {
+    margin: 0;
+    padding: 0;
+}
+
+.CardItemLikes-button:hover {
+    background-color: #e8eaed;
+    cursor: pointer;
+}
+
+.CardItem__link {
+    text-decoration: none;
+    color: black;
+}
+
+.small_avatar {
+    width: 35px;
+    height: 35px;
+}
+
+.CardItemNewComment__container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+
+.CardItemNewComment__input {
+    background-color: #e8e9ea;
+    flex-grow: 1;
+    border: 1px solid #9f97b6;
+    align-self: stretch;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.CardItemNewComment__icon-block {
+    position: absolute;
+    right: 30px;
+}
+
+.PostWall__new-post_container {
+    height: 40px;
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+.PostCreateCard__container {
+  margin: 10px;
+  padding: 10px;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.PostCreateCard__header_container {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.PostCreateCard__tabs_container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+    height: 30px;
+    border-bottom: 1px solid #9f97b6;
+    flex-grow: 1;
+    color: #3b5da5;
+}
+
+.PostCreateCard__tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #9f97b6;
+    flex-grow: 1;
+    max-width: 25%;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.PostCreateCard__tab > span {
+  color: #9f97b6; 
+  margin-right: 10px;;  
+}
+
+.PostCreateCard__tab:first-child {
+  color: black;
+}
+
+
+.PostCreateCard__tab:last-child {
+    border-right: none;
+}
+
+.PostCreateCard__close {
+  text-align: center;
+  text-decoration: none;
+  color: #9f97b6;
+}
+
+.PostCreateCard__input {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+}
+
+.PostCreateCard__button_left {
+  align-self: flex-end;
+}
+
+.PostView__buttons_container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.PostEditCard__header_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: flex-start;
+}
+
+.PostEditCard__header_container > h4 {
+    margin: 0;
+}
+
+.centered {
+    margin: 5% auto;
 }
